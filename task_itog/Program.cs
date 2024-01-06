@@ -45,6 +45,7 @@ int SizeArrayLenthOfElementsUpTo (string[] array, int elementSize)
     return array2Size;
 }
 
+
 string[] ArrayLenthOfElementsUpTo (string[] array, int elementSize) 
 {
     int array2Size=SizeArrayLenthOfElementsUpTo(array, elementSize);           
