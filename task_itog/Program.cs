@@ -47,7 +47,18 @@ int SizeArrayLenthOfElementsUpTo (string[] array, int elementSize)
 
 string[] ArrayLenthOfElementsUpTo (string[] array, int elementSize) 
 {
-      
+    int array2Size=SizeArrayLenthOfElementsUpTo(array, elementSize);           
+    string []array2=new string [array2Size];
+    int array2Index=0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= elementSize)
+        {
+            array2[array2Index]=array[i];
+            array2Index++;
+        }  
+    } 
+    return array2;
 }
 
 
