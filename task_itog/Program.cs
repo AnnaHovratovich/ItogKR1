@@ -32,9 +32,32 @@ void PrintArray(string[] array)
 }
 
 
+int SizeArrayLenthOfElementsUpTo (string[] array, int elementSize)
+{
+    int array2Size=0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= elementSize)
+        {
+            array2Size++;
+        } 
+    }
+    return array2Size;
+}
+
+string[] ArrayLenthOfElementsUpTo (string[] array, int elementSize) 
+{
+      
+}
+
+
 Console.WriteLine("Введите количество элементов массива: ");
 int lengthMas= Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine("Введите элементы массива: ");
 string []massive=CreateArray(lengthMas);
 PrintArray(massive);
 Console.Write(" -> ");
+int sizeElement=3;
+string []newMassive=ArrayLenthOfElementsUpTo(massive, sizeElement);
+PrintArray(newMassive);
+Console.WriteLine();
